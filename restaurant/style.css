@@ -1,0 +1,112 @@
+/* Baratie - one stylesheet for every page */
+
+/* Whole page: dark background, cream text, elegant font, centered 
+   Color scheme: navy, gold, and cream, the colors of classic French fine dining.
+   This is a nod to the Baratie in One Piece.
+*/
+
+body {
+    background-color: #0f1a2b;
+    color: #f3ead7;
+    font-family: Georgia, "Times New Roman", serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+/* Restaurant name at the top */
+h1 {
+    color: #c9a227;
+    text-align: center;
+    font-size: 3em;
+    letter-spacing: 4px;
+    margin-bottom: 10px;
+}
+
+/* Navigation bar with gold lines above and below */
+nav {
+    text-align: center;
+    padding: 10px 0;
+    border-top: 1px solid #c9a227;
+    border-bottom: 1px solid #c9a227;
+    margin-bottom: 30px;
+}
+
+nav a {
+    color: #c9a227;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.1em;
+}
+
+/* Link changes when the mouse is over it */
+nav a:hover {
+    color: #f3ead7;
+    text-decoration: underline;
+}
+
+/* Page and section headings */
+h2 {
+    color: #c9a227;
+    text-align: center;
+}
+
+/* Section headings use the same 500px column as the lists below them */
+h3 {
+    color: #c9a227;
+    max-width: 500px;
+    margin: 25px auto 10px;
+    border-bottom: 1px solid #c9a227;
+    padding-bottom: 5px;
+}
+
+/* Menu lists: no bullets, same 500px centered column */
+ul {
+    list-style: none;
+    padding: 0;
+    max-width: 500px;
+    margin: 0 auto 25px;
+}
+
+/* Menu items: dish name on the left, price on the right */
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 6px 0;
+    border-bottom: 1px dotted #5a6a80;
+}
+
+/* Prices: pushed to the right edge of the column (text-align: right).
+   The menu prices were adjusted so every item in a section has the same
+   number of digits (drinks are single-digit, all other sections are double-digit).
+   The dashes and ฿ symbols still line up evenly in each section. */
+.price {
+    color: #c9a227;
+    font-weight: bold;
+    font-family: "Times New Roman", serif;
+    font-variant-numeric: lining-nums tabular-nums;
+    min-width: 70px;
+    text-align: right;
+    white-space: nowrap;
+}
+
+/* Today's special on the home page: a centered card with a gold border */
+.special {
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 20px;
+    border: 1px solid #c9a227;
+    text-align: center;
+}
+
+/* Footer at the bottom of every page */
+footer {
+    text-align: center;
+    font-size: 0.9em;
+    color: #b8ad94;
+    border-top: 1px solid #c9a227;
+    margin-top: 40px;
+    padding-top: 15px;
+}
